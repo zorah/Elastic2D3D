@@ -6,6 +6,7 @@
 clc
 close all
 clear all
+addpath(genpath('.')),
 
 options = struct;
 
@@ -29,10 +30,10 @@ options.use_rn_shks = false;
 
 % human
 
-% load('./data/faust006.mat'); this is the original shape in the paper 
+% load('./data/faust_006.mat'); this is the original shape in the paper 
 % but its too large for github, can be downloaded from
-% vision.in.tum.de/~laehner/Elastic2D3D/faust006.mat
-load('./data/faust000.mat');
+% https://zorah.github.io/publication/2016-cvpr-efficient-globally-optimal-2d-to-3d-deformable-shape-matching
+load('./data/faust_000.mat');
 load('./data/faust005_sketch.mat');
 
 
